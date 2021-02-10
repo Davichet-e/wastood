@@ -121,4 +121,5 @@ app.*.symbols
 
 .metals
 
-assets
+assets/illustrations
+assets/fonts
