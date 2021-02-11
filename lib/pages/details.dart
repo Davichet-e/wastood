@@ -156,50 +156,7 @@ class DetailsPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(24),
                       ),
                     ),
-                    // child: RaisedButton(
-                    //   child: Text("Find on Map"),
-                    //   onPressed: () async {
-                    //     final availableMaps = await MapLauncher.installedMaps;
-                    //     await availableMaps.first.showMarker(
-                    //       coords: Coords(wastood.location.longitude, wastood.location.latitude),
-                    //       title: wastood.title,
-                    //     );
-                    //   },
-                    // ),
                 ): Container(),
-                // Container(
-                //   decoration: BoxDecoration(
-                //     color: Colors.black38,
-                //     borderRadius: BorderRadius.circular(20),
-                //   ),
-                //   child: Column(
-                //     children: [
-                //       Text(
-                //         wastood.title,
-                //         style: TextStyle(
-                //           fontSize: 45,
-                //           color: Color(0xFFE9C46A),
-                //         ),
-                //       ),
-                //       // ...args.details.entries
-                //       //     .map((entry) => Text("${entry.key} ${entry.value}"))
-                //       //     .toList(),
-                //       Text(
-                //         "ends at: " +
-                //             wastood.endsAt
-                //                 .toDate()
-                //                 .difference(DateTime.now())
-                //                 .dayHourMinuteSecondFormatted()
-                //                 .toString(),
-                //       ),
-                //       Text(wastood.author.name),
-                //       CircleAvatar(
-                //         backgroundImage:
-                //         NetworkImage(wastood.author.profilePicURL),
-                //       )
-                //     ],
-                //   ),
-                // ),
               ],
             ),
           ),
@@ -207,38 +164,6 @@ class DetailsPage extends StatelessWidget {
       ),
     );
   }
-
-  // _buildImagesArea(BuildContext context, Wastood wastood) {
-  //   return ConstrainedBox(
-  //     constraints: BoxConstraints(maxHeight: 250),
-  //     child: Container(
-  //       decoration: BoxDecoration(
-  //         color: Color(0xFFF6F6F6),
-  //         border: Border.all(width: 1, color: Color(0xFFE8E8E8)),
-  //         borderRadius: const BorderRadius.all(const Radius.circular(8)),
-  //       ),
-  //       child: ListView(
-  //         scrollDirection: Axis.horizontal,
-  //         children: [
-  //           ...wastood.imageUrls.map((imageUrl) {
-  //             return Padding(
-  //               padding: const EdgeInsets.all(8),
-  //               child: Stack(
-  //                 alignment: Alignment.topRight,
-  //                 children: [
-  //                   Image.network(
-  //                     imageUrl,
-  //                     fit: BoxFit.fitHeight,
-  //                   ),
-  //                 ],
-  //               ),
-  //             );
-  //           }).toList()
-  //         ],
-  //       ),
-  //     ),
-  //   );
-  // }
 
   _buildSingleImageArea(BuildContext context, Wastood wastood) {
     return ConstrainedBox(
@@ -291,8 +216,6 @@ class DetailsPage extends StatelessWidget {
             backgroundDecoration: BoxDecoration(
               color: Colors.grey[200],
             ),
-            // pageController: widget.pageController,
-            // onPageChanged: onPageChanged,
           ),
         ));
   }

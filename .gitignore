@@ -105,6 +105,9 @@ unlinked_spec.ds
 **/macos/Flutter/Flutter-Release.xcconfig
 **/macos/Flutter/Flutter-Profile.xcconfig
 
+ios/Runner/GoogleService-Info.plist
+android/app/google-services.json
+
 # Coverage
 coverage/
 

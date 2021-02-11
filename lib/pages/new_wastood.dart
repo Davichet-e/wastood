@@ -47,11 +47,8 @@ class _NewWastoodPageStateInner extends State<_NewWastoodPageInner> {
   final FirebaseAuth auth = FirebaseAuth.instance;
   final FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-  List<WastoodImage> images = [
-    // 'https://picsum.photos/seed/seed1/300/200',
-    // 'https://picsum.photos/seed/seed2/300/200',
-    // 'https://picsum.photos/seed/seed3/300/200'
-  ];
+  List<WastoodImage> images = [];
+
   String barcode;
   bool barcodeLookup = false;
   bool barcodeLookupSuccessful = false;
@@ -627,7 +624,8 @@ class _NewWastoodPageStateInner extends State<_NewWastoodPageInner> {
         'title': this.titleController.text,
         'endsAt': this.goodUntil,
         'locationNote': this.locationNoteController.text,
-        'location': GeoFirePoint(this.location.latitude, this.location.longitude).data,
+        'location':
+            GeoFirePoint(this.location.latitude, this.location.longitude).data,
         'category': this.category,
         'description': this.descriptionController.text,
         'completed': false,
